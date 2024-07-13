@@ -12,24 +12,14 @@ import Reachout from './components/Reachout';
 
 function App() {
 
-  const heroRef = useRef(null);
-  const serviceRef = useRef(null);
-  const projectRef = useRef(null);
-  const experienceRef = useRef(null);
-  const testimonialRef = useRef(null);
-  const educationRef = useRef(null);
-  const reachoutRef = useRef(null);
 
-  const scrollToSection = (sectionRef:any) => {
-    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <>
       <div className="h-[100%]">
         <div className=" flex flex-col min-h-screen relative bg-dark">
           <div className="">
-          <NavBar scrollToSection={scrollToSection} sections={{ heroRef, serviceRef, projectRef, experienceRef, testimonialRef, educationRef, reachoutRef }} />
+          <NavBar  />
           </div>
           <div className="">
             <Hero />

@@ -46,8 +46,8 @@ const Project = () => {
 
 
     return (
-        <div className="bg-dark mb-8 relative">
-            <Screen>
+        <div className="bg-dark mb-8 relative " id="project">
+            {/* <Screen> */}
                 <div className='flex flex-row items-center' >
                     <span className="text-[#656D72]">
                         <CgLoadbar size={30} />
@@ -55,7 +55,6 @@ const Project = () => {
                     <p className="text-[#656D72]">M Y    <span className="ml-2">W O R K </span></p>
                 </div>
                 <span className="text-[#CAD5DC] text-1xl leading-loose text-2xl"> Featured Portfolio</span>
-
                 <div className="w-full">
                     <div
                         className="flex items-center md:gap-6 transition-transform ease-out duration-500 no-scrollbar"
@@ -134,7 +133,7 @@ const Project = () => {
                     </div>
                 </div>
 
-            </Screen>
+            {/* </Screen> */}
         </div>
     )
 }

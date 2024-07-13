@@ -7,7 +7,7 @@ import Screen from "./Screen";
 
 const Reachout = () => {
     return (
-        <div className=" bg-[#111111]">
+        <div className=" bg-[#111111]" id="reachout">
             <Screen>
                 <div className="flex lg:flex-row flex-col w-full justify-between h-40">
                     {data.map((ele) => (

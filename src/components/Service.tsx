@@ -11,7 +11,7 @@ import Screen from './Screen';
 
 const Service = () => {
     return (
-        <div className="bg-[#111111] flex items-center flex-col">
+        <div className="bg-[#111111] flex items-center flex-col" id="service">
             <Screen>
                 <div className="flex items-center flex-col">
 

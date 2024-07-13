@@ -4,7 +4,7 @@ import Screen from './Screen';
 const Education: React.FC = () => {
     return (
         <Screen>
-            <div className="bg-[#0d0d0d] text-white ">
+            <div className="bg-[#0d0d0d] text-white " id="education">
                 <div className='w-full'>
 
 

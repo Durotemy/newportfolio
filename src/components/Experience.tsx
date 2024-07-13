@@ -39,7 +39,6 @@ const Experience = () => {
                 'Developed enterprise-level applications for internal use.',
                 'Improving overall Web Application performance for mobile users.',
                 'Adding Multilple features on the Web Application, reducing bugs as well.',
-                'Mentored a junior developer.',
                 'Building new Application based on the companies demand',
             ]
         },
@@ -87,9 +86,9 @@ const Experience = () => {
     };
 
     return (
-        <div className="bg-[#111111] mb-72">
+        <div className="bg-[#111111] mb-72 h-[400px]" id="experience">
             <Screen>
-                <div className="mt-8">
+                <div className="mt-8 ">
                     <div>
                         <div className='flex flex-row items-center' >
                             <span className="text-[#656D72]">
@@ -101,15 +100,15 @@ const Experience = () => {
                     </div>
 
                 </div>
-                <div className="mx-auto flex w-full items-center">
-                    <div className="flex w-full flex-row lg:flex-row lg:justify-between sm:justify-between  md:flex-row justify-between  items-center  py-4  text-white">
-                        <div className="lg:w-2/12 mt-4 w-1/12">
-                            <ul className="space-y-4">
+                <div className="mx-auto flex w-full ">
+                    <div className="flex w-full lg:w-full mx-auto h-full lg:flex-row flex-col lg:justify-between sm:justify-between  md:flex-row justify-between py-4  text-white">
+                        <div className="lg:w-3/12  w-full my-4 lg:my-0 mx-1">
+                            <ul className="lg:space-y-4 lg:flex lg:flex-col  overflow-scroll w-full grid grid-rows-2 grid-flow-col">
                                 {Object.keys(workExperiences)?.map((company) => (
-                                    <li key={company} className="text-left">
+                                    <li key={company} className="lg:text-left flex  mx-4">
                                         <button
                                             onClick={() => handleCompanyClick(company)}
-                                            className={`text-lg text-left px-2 focus:outline-none h-[35px] w-[200px] ${selectedCompany === company ? 'bg-dark rounded text-[#5750a2] flex items-center' : 'text-white'
+                                            className={`text-lg text-left lg:px-2 focus:outline-none h-[35px] lg:w-[200px] w-[100px] ${selectedCompany === company ? 'bg-dark rounded text-[#5750a2] ' : 'text-white'
                                                 }`}
                                         >
                                             {company.charAt(0).toUpperCase() + company.slice(1)}
@@ -118,9 +117,9 @@ const Experience = () => {
                                 ))}
                             </ul>
                         </div>
-                        <div className="flex justify-end my-auto lg:w-full w-10/12">
+                        <div className="flex lg:justify-end  lg:w-10/12 w-full">
                             {selectedCompany && (
-                                <div className="px-4  rounded shadow-md justify-end lg:w-8/12 w-full transition-opacity duration-500 ease-in-out opacity-100">
+                                <div className="lg:px-4 px-1 rounded overflow-auto h-[300px] mt-2 shadow-md justify-end lg:w-8/12 w-full transition-opacity duration-500 ease-in-out opacity-100">
                                     <div>
                                         <div className="flex flex-row items-center">
                                             <p className="">{workExperiences[selectedCompany]?.role}, </p>
@@ -136,7 +135,7 @@ const Experience = () => {
                                             ))}
                                         </div>
                                         <ul className="mt-4 space-y-2">
-                                            {/* <hr className="border-0.1 border-white" /> */}
+                                            <hr className="border-0.1 border-white" />
                                             {workExperiences[selectedCompany]?.responsibilities?.map((responsibility, index) => (
                                                 <li key={index} className="list-disc list-inside text-md">
                                                     {responsibility}

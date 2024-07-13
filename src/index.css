@@ -13,6 +13,7 @@
 @layer base {
   body {
     @apply font-lato font-normal !important;
+    background-color: black;
   }
 }
 @layer utilities {

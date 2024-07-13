@@ -5,7 +5,7 @@ import Screen from "./Screen"
 
 const Testimonial = () => {
     return (
-        <div className="bg-[#111111] mb-8">
+        <div className="bg-[#111111] mb-8" id="testimonial">
             <Screen>
                 <div className="">
                     <div className="mt-40">
